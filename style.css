@@ -1,0 +1,97 @@
+* {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 700;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.item-menu {
+  font-size: 18px;
+  display: flex;
+  font-weight: 600;
+  gap: 16px;
+  align-items: center;
+  color: white;
+  padding: 10px;
+}
+
+nav ul nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #333 !important;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+nav ul li a:hover img {
+  filter: invert(35%) sepia(100%) saturate(3442%) hue-rotate(198deg)
+    brightness(100%) contrast(101%);
+}
+nav ul li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width 0.3s;
+  margin-top: 5px;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  font-weight: 600;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+}
+
+table thead tr {
+  background-color: #0b7ca5;
+  color: #fff;
+  position: sticky;
+  top: 0;
+}
+
+table th,
+table td {
+  padding: 12px 15px;
+  text-align: center;
+  width: 100px;
+  max-width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+table tbody tr:nth-of-type(even) {
+  background-color: #f9f9f9;
+}
+
+table tbody tr:last-of-type {
+  border-bottom: 2px solid #f2f2f2;
+}
+
+table tbody tr.active-row {
+  font-weight: bold;
+  color: #00afef;
+}
